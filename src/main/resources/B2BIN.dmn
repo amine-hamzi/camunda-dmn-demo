@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_0a8bziv" name="definitions" namespace="http://camunda.org/schema/1.0/dmn" exporter="dmn-js (https://demo.bpmn.io/dmn)" exporterVersion="13.0.0">
+  <decision id="B2BIN" name="">
+    <decisionTable id="decisionTable_0y5w7ir">
+      <input id="InputClause_0a1lpfi" label="customerType" camunda:inputVariable="customerType">
+        <inputExpression id="LiteralExpression_1pvxoay" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1hfwrwb" label="customerSegment" camunda:inputVariable="customerSegment">
+        <inputExpression id="LiteralExpression_1tnru73" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="input1" label="Chapitre comptable" camunda:inputVariable="accountClass">
+        <inputExpression id="inputExpression1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0u0eyhx" label="Code produit" camunda:inputVariable="productCode">
+        <inputExpression id="LiteralExpression_1bs3ucd" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="OutputClause_0itvg68" label="Compte créditable ?" name="isAccountEligible" typeRef="boolean" />
+      <rule id="DecisionRule_06nd1s9">
+        <inputEntry id="UnaryTests_0aq58np">
+          <text>"RETAIL"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0onwdyw">
+          <text>"ALL"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wmkmv3">
+          <text>"372000"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1gv0g4a">
+          <text>"001"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h1a7ct">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
